@@ -1,0 +1,47 @@
+{
+  "as_of": "2026-11-10",
+  "currency": "USD",
+  "status": "Planning estimates; WhatsApp values require account-level verification",
+  "scope": "One company; one bot number; all WhatsApp recipients use Bangladesh numbers; direct platform integrations",
+  "usage_per_meeting": {
+    "average_attendees": 5,
+    "whatsapp_template_messages": 10,
+    "service_messages": 20,
+    "ai_calls": 20,
+    "input_tokens_per_call": 1000,
+    "billable_output_tokens_per_call": 250
+  },
+  "whatsapp": {
+    "utility_usd_per_delivered_message": "0.0037",
+    "marketing_usd_per_delivered_message": "0.0732",
+    "service_usd_per_delivered_message": "0.0037",
+    "free_service_messages_per_number_per_month": 1000,
+    "rate_status": "Provider-reported Bangladesh rates; not independently confirmed from Meta rate card",
+    "rate_source": "https://www.msgorb.com/whatsapp-pricing/bangladesh",
+    "allowance_source": "https://support.gupshup.io/hc/en-us/articles/62362400519705-WhatsApp-Service-Messages-Pricing-w-e-f-01-Oct-2026"
+  },
+  "shared": {
+    "vm_usd_per_month": "12.00",
+    "daily_backup_fraction_of_vm": "0.30",
+    "hosting_source": "https://www.digitalocean.com/pricing/droplets",
+    "backup_source": "https://docs.digitalocean.com/products/backups/details/pricing/",
+    "ai_model_example": "gpt-5.6-terra",
+    "ai_input_usd_per_million_tokens": "2.00",
+    "ai_output_usd_per_million_tokens": "12.00",
+    "ai_source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra"
+  },
+  "scenarios": [
+    {"name": "Small pilot", "meetings_per_month": 20},
+    {"name": "Company use", "meetings_per_month": 100},
+    {"name": "Busy use", "meetings_per_month": 300}
+  ],
+  "exclusions": [
+    "Development, maintenance, and staff time",
+    "Taxes, currency conversion, bank fees, and account-specific discounts",
+    "Phone number or SIM, new domain, and business registration costs",
+    "Third-party messaging provider fees",
+    "External backup storage and additional monitoring subscriptions",
+    "Existing company calendar or video-conferencing licenses",
+    "AI usage beyond the supplied token assumptions"
+  ]
+}

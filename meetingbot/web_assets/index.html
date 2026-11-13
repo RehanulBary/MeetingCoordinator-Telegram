@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8fa">
+  <title>Meeting Bot · Workspace</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar" aria-label="Workspace navigation">
+    <a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true"></span><span>Meeting Bot<span class="brand-caption">COMPANY WORKSPACE</span></span></a>
+    <div class="workspace"><span class="workspace-avatar">W</span><span>Your workspace<small>Local administration</small></span><span class="workspace-dot" aria-hidden="true"></span></div>
+    <span class="nav-caption">MANAGE</span>
+    <nav id="navigation" aria-label="Main"></nav>
+    <div class="sidebar-bottom"><span class="local-dot" aria-hidden="true"></span><strong>Running on your computer</strong><p>Company data stays in your local database. Telegram and OpenAI receive data needed for conversations.</p><span class="version">LOCAL PILOT · v0.1</span></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><span id="breadcrumb">Workspace <span>/</span> Overview</span><div class="topbar-right"><span class="local-label">Local workspace</span><span class="avatar" aria-label="Administrator">A</span></div></header>
+    <main id="main" tabindex="-1">
+      <div id="offline" class="notice danger" role="alert" hidden></div>
+      <div id="update-notice" class="notice warning" role="status" hidden></div>
+      <div class="page-heading"><div><div class="eyebrow">WORKSPACE</div><h1 id="page-title">Overview</h1><p id="page-subtitle">Your meeting coordinator, in one place.</p></div><div class="heading-actions"><span id="runtime-badge" class="badge neutral">Loading</span><button id="bot-toggle" class="button primary" disabled>Loading…</button></div></div>
+      <div id="content" aria-busy="true"><div class="loading-state"><span class="spinner" aria-hidden="true"></span>Loading your workspace…</div></div>
+      <footer class="footer"><span>Meeting Bot <span class="footer-dot">·</span> Telegram + GPT-6 Luna</span><span id="last-updated">Connecting to the local server</span></footer>
+    </main>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
